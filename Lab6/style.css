@@ -1,0 +1,91 @@
+* {
+    font-family: Comic Sans MS, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+header {
+    position: static;
+    z-index: 1000;
+    top: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo {
+    margin: 10px;
+    display: inline-flex;
+    padding: 15px;
+    background-color: darkgrey;
+    border-radius: 25%;
+}
+
+.head {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 0 0 30px 30px;
+    box-shadow: #000000 0 1px 5px 2px;
+    box-shadow: rgba(0, 0, 0, 0.37) 0 1px 5px 2px;
+    margin: 0 auto;
+}
+
+div {
+    padding: 20px;
+}
+
+.logo > img {
+    width: 90px;
+    border-radius: 25%;
+}
+
+.nav {
+    float: right;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    user-select: inherit;
+    list-style: none;
+}
+
+.nav li {
+    float: left;
+    margin: 0 10px;
+}
+
+.nav a {
+    display: block;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: gray;
+    box-shadow: darkgrey 2px 2px 1px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.nav a:active {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+
+
+

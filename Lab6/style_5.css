@@ -1,0 +1,158 @@
+* {
+    font-family: Comic Sans MS, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+p {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+header {
+    position: static;
+    z-index: 1000;
+    top: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo {
+    margin: 10px;
+    display: inline-flex;
+    padding: 15px;
+    background-color: darkgrey;
+    border-radius: 25%;
+}
+
+.head {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 0 0 30px 30px;
+    box-shadow: #000000 0 1px 5px 2px;
+    box-shadow: rgba(0, 0, 0, 0.37) 0 1px 5px 2px;
+    margin: 0 auto;
+}
+
+div {
+    padding: 20px;
+}
+
+.logo > img {
+    width: 90px;
+    border-radius: 25%;
+}
+
+.nav {
+    float: right;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    user-select: inherit;
+    list-style: none;
+}
+
+.nav li {
+    float: left;
+    margin: 0 10px;
+}
+
+.nav a {
+    display: block;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: gray;
+    box-shadow: darkgrey 2px 2px 1px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.nav a:active {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+.shadow-list {
+    display: flex;
+    width: 1140px;
+    padding: 50px 0 0 50px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+
+.shadow-list div {
+    margin-bottom: 50px;
+    margin-right: auto;
+    width: 300px;
+    box-sizing: border-box;
+    height: 400px;
+    text-align: center;
+}
+
+img {
+    width:75%;
+    height:auto;
+    align-content: center;
+}
+.article-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.first-block{
+    background: linear-gradient(to bottom left, orange 2%, blue 30%, yellow 70%, green 95%);
+}
+
+.second-block {
+    background-image: linear-gradient(45deg, green 20%, transparent 25%, transparent 25%, transparent 75%, orange 75%, blue 100%),
+    linear-gradient(50deg, yellow 20%, transparent 25%, transparent 25%, transparent 75%, purple 75%, orange 100%);
+    background-size: 100px 100px;
+    background-position: 5px 5px, 50px 50px;
+}
+
+.third-block {
+    background-image: linear-gradient(to right, green 25%, transparent 50%, transparent 100%),
+    linear-gradient(to right, transparent 50%, blue 50%, yellow 100%);
+    background-size: 105px;
+    background-repeat: repeat;
+}
+
+.fourth-block {
+    background-image: linear-gradient(to left top, yellow 35%, transparent 10%, transparent 100%),
+    linear-gradient(to right top, green 25%, transparent 10%, transparent 100%),
+    linear-gradient(to right bottom, orange 25%, transparent 50%, transparent 70%),
+    linear-gradient(to left bottom, blue 25%, transparent 60%, transparent 100%);
+}
+
+.fifth-block{
+    background-image:linear-gradient(to right top, rebeccapurple 10%, transparent 30%, transparent 90%),
+    linear-gradient(
+            350deg,
+            hsl(44, 100%, 38%) 0%,
+            hsl(43, 46%, 60%) 5%,
+            hsl(335, 44%, 41%) 16%,
+            hsl(290, 29%, 31%) 24%,
+            hsl(120, 55%, 54%) 32%,
+            hsl(41, 100%, 65%) 39%,
+            hsl(321, 45%, 46%) 47%,
+            hsl(263, 31%, 50%) 56%,
+            hsl(219, 97%, 45%) 64%,
+            hsl(109, 68%, 55%) 73%,
+            hsl(50, 100%, 50%) 82%,
+            hsl(30, 79%, 45%) 91%
+    );
+}
