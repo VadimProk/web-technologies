@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+sup.lowered {
+    color: darkgrey;
+    font-size: 24px;
+    vertical-align: super;
+    position: relative;
+    top: 4px; /* Опускає елемент на 2 пікселі, можна змінювати значення */
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.weather-container {
+    width: 450px;
+    align-content: center;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.location {
+    text-align: center;
+    padding: 16px;
+    background: #f1f1f1;
+    font-size: 1.2em;
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    gap: 35px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.temp {
+    color: dimgray;
+    font-size: 2.5em;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.details {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+.day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+    gap: 35px;
+}
+
+.day:last-child {
+    border-bottom: none;
+}
+
+.day-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 175px;
+    height: 70px;
+
+}
+
+.weather-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.temp-range {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.pollen {
+    font-size: 1em;
+    color: #666;
+}

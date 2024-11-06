@@ -1,0 +1,364 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+.container {
+    color: dimgray;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 0 94px;
+}
+.menu{
+    padding: 0 196px;
+    display: flex;
+    width: 1085px;
+    justify-content: space-between;
+
+}
+.menu1{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.burger-icon {
+    width: 40px;
+    height: 7px;
+    background-color: brown;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.burger-icon::before, .burger-icon::after {
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #994C00;
+    position: absolute;
+    left: 5px;
+}
+
+.burger-icon::before {
+    top: -10px;
+}
+
+.burger-icon::after {
+    top: 10px;
+}
+
+.image{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+/*.images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 0 94px;
+}*/
+.text{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: gainsboro;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -100px;
+}
+.text1{
+    font-family: Arial, sans-serif;
+    color: #333333;
+    font-size: 30px;
+    position: relative;
+    padding-left: 210px;
+}
+.text2{
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    position: relative;
+    padding-left: 210px;
+    margin-top: 5px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1085px;
+    height: 150px;
+    color: #333333;
+    font-size: 24px;
+}
+.my-button {
+    padding: 15px 35px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: Arial;
+    font-size: 16px;
+}
+.my-button1 {
+    padding: 10px 35px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 0;
+    font-size: 16px;
+}
+.my-button:hover {
+    background-color: red;
+}
+.menu2{
+    display: flex;
+    width: 1085px;
+    height: auto;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.menutext{
+    font-size: 24px;
+    color: #333333;
+}
+.menutext1{
+    font-size: 20px;
+    color: gray;
+}
+.menu3 {
+    display: flex;
+    width: 1085px;
+    height: auto;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.menu4{
+    width: 300px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    text-align: center;
+
+}
+.image1{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.fromthe{
+    display: flex;
+    flex-direction: column;
+    width: 1085px;
+    height: auto;
+    margin-top: 32px;
+}
+.fromTex{
+    font-size: 24px;
+    color: #333333;
+}
+.fromTex1{
+    font-size: 20px;
+    color: gray;
+}
+.fromthe1{
+    margin-top: 16px;
+    display: flex;
+    width: 1085px;
+    height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+.fromthe2{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: auto;
+    word-wrap: break-word;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.fromthe3{
+    display: flex;
+    flex-direction: column;
+}
+.textlast{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(26,24,24);
+    position: absolute;
+    margin-left: -100px;
+    margin-top: 120px;
+    text-align: center;
+}
+.sot{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 0 94px;
+}
+.galery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.galery1 {
+    width: 1085px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 0 94px;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-left: -100px;
+    z-index: 1000;
+}
+.content {
+    margin-top: 60px; /* Відступ, щоб контент не перекривав шапку */
+    padding: 20px;
+    height: 2000px; /* Додаємо висоту для можливості прокручування */
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0; /* Видаляємо відступи між елементами */
+    margin: 0; /* Задати нульові відступи, якщо є */
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px; /* Між елементами буде невеликий пробіл */
+    padding: 0 94px;
+}
+.galery {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.galery1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 0 94px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .menu3 {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .fromthe1 {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .images {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .images {
+        justify-items: center;
+    }
+
+    .menu4 {
+        width: 300px;
+    }
+    .menu3 {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .fromTex {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .fromthe {
+        align-items: center;
+        flex-direction: column;
+    }
+    .fromthe1 {
+        align-items: center;
+        width: 300px;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .fromthe2 {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+}
+
+
+
+
