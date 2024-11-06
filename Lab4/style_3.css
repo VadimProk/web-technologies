@@ -1,0 +1,71 @@
+
+a {
+    color: purple;
+}
+
+
+.main > a {
+    color: green;
+}
+
+
+.square-list li {
+    list-style-type: square;
+}
+
+
+.icon-list li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.icon-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: green;
+}
+
+ul ul ul {
+    list-style-type: none;
+}
+
+.main > ul {
+    list-style-type: none;
+    padding-left: 1.5em;
+}
+
+.square-list a {
+    text-decoration: none;
+}
+
+ul > li > ul > li {
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+a {
+    color: purple;
+}
+
+.main > a {
+    color: green;
+}
+
+.numbered-list {
+    list-style-type: none;
+    padding-left: 1.5em;
+}
+
+.numbered-list li {
+    list-style-type: none;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    counter-increment: list-item;
+}
+
+.numbered-list li::before {
+    content: counter(list-item) ". ";
+    font-weight: bold;
+    margin-right: 0.5em;
+}

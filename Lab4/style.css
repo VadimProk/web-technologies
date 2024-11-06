@@ -1,0 +1,58 @@
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+p {
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+}
+
+.red-text {
+    color: red;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+#italic-bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.shadow {
+    text-shadow: 5px -5px 3px
+}
+
+.strike {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
+
+.fish1 {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
+
+.fish2 {
+    letter-spacing: 30px;
+    word-spacing: 50px;
+}
+
+#italic-bold {
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.fish2, #italic-bold {
+    text-shadow: 5px -5px 3px #600;
+}

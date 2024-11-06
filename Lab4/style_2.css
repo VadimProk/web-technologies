@@ -1,0 +1,43 @@
+
+.title {
+    color: red;
+    font-family: Calibre, sans-serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    font-size: 28px;
+    color: #333;
+}
+
+.ingredients {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #444;
+    line-height: 1.6;
+}
+
+.ingredients mark {
+    background-color: #ffff99;
+    font-weight: bold;
+}
+
+.separator {
+    border: none;
+    height: 5px;
+    width: 500px;
+    background-color: green;
+    margin: 20px auto;
+}
+
+.note {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
