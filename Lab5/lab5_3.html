@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="style_3.css">
+</head>
+<body>
+<h1>Анкета</h1>
+
+<form action="questionnaire.html" method="get">
+    <div class="pers"><h2>Особиста інформація</h2></div>
+    <br>
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="about">Про себе:</label><br>
+    <textarea id="about" name="about" rows="4" cols="50"></textarea><br><br>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Мобільний номер:</label>
+    <input type="tel" id="phone" name="phone" pattern="\+?[0-9]{10,15}"><br><br>
+
+    <label for="birthday">Дата народження:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+
+    <h3>Ваша стать:</h3>
+    <label><input type="radio" name="gender" value="male" required> Чоловік</label>
+    <label><input type="radio" name="gender" value="female"> Жінка</label>
+    <label><input type="radio" name="gender" value="other"> Інше</label><br><br>
+
+    <h3>Сімейний стан:</h3>
+    <label><input type="radio" name="marital_status" value="single" required> Неодружений(а)</label>
+    <label><input type="radio" name="marital_status" value="married" checked> Одружений(а)</label>
+    <label><input type="radio" name="marital_status" value="divorced"> Розлучений(а)</label><br><br>
+
+    <h3>Ваше місто:</h3>
+    <select name="city">
+        <option value="kyiv">Київ</option>
+        <option value="lviv">Львів</option>
+        <option value="odessa" selected>Одеса</option>
+        <option value="kharkiv">Харків</option>
+        <option value="dnipro">Дніпро</option>
+    </select><br><br>
+
+    <div class="pers"><h2>Інша інформація</h2></div>
+
+    <h3>Хобі:</h3>
+    <label><input type="checkbox" name="hobbies" value="reading"> Читання</label>
+    <label><input type="checkbox" name="hobbies" value="sports"> Спорт</label>
+    <label><input type="checkbox" name="hobbies" value="music"> Музика</label>
+    <label><input type="checkbox" name="hobbies" value="travel"> Подорожі</label><br><br>
+
+    <h3>Улюблені жанри музики:</h3>
+    <select name="genres" multiple>
+        <option value="rock">Рок</option>
+        <option value="pop">Поп</option>
+        <option value="jazz">Джаз</option>
+        <option value="classical">Класична</option>
+        <option value="hiphop">Хіп-хоп</option>
+        <option value="electronic">Електроніка</option>
+    </select><br><br>
+
+    <h3>Країна для подорожі:</h3>
+    <select name="travel_country">
+        <optgroup label="Європа">
+            <option value="france">Франція</option>
+            <option value="germany">Німеччина</option>
+            <option value="italy">Італія</option>
+        </optgroup>
+        <optgroup label="Азія">
+            <option value="japan">Японія</option>
+            <option value="china">Китай</option>
+            <option value="india">Індія</option>
+        </optgroup>
+        <optgroup label="Америка">
+            <option value="usa">США</option>
+            <option value="canada">Канада</option>
+            <option value="brazil">Бразилія</option>
+        </optgroup>
+        <optgroup label="Африка">
+            <option value="egypt">Єгипет</option>
+            <option value="south_africa">Південна Африка</option>
+            <option value="morocco">Марокко</option>
+        </optgroup>
+    </select><br><br>
+
+    <h3>Улюблений фрукт:</h3>
+    <input list="fruits" name="favorite_fruit">
+    <datalist id="fruits">
+        <option value="Apple">
+        <option value="Banana">
+        <option value="Cherry">
+        <option value="Grape">
+        <option value="Orange">
+    </datalist><br><br>
+</form>
+<br>
+<form action="questionnaire.html" method="get">
+    <div class="pers"><h2>Завантажте музику</h2></div>
+    <br>
+    <label for="file_upload">Завантажити улюблені аудіо файли:</label>
+    <input type="file" id="file_upload" name="audio_files_post" accept="audio/*" multiple><br><br>
+
+    <button type="submit">Надіслати</button>
+    <button type="reset">Очистити</button>
+</form>
+</body>
+</html>
